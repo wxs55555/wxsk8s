@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE mapper  
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">  
+<mapper namespace="com.wxs.mapper.UserMapper">
+    <select id="login" parameterType="com.wxs.user.User" resultType="com.wxs.user.User">
+        SELECT USER_NAME AS name,USER_PWD AS password FROM t_user WHERE USER_NAME=#{name} AND USER_PWD=#{password}
+    </select>  
+    <select id="searchUser" parameterType="com.wxs.user.User" resultType="com.wxs.user.User">
+        SELECT USER_NAME AS name,OPEN_ID AS openid FROM t_user
+        <where> 1=1
+            <if test="id!=null">
+                and USER_ID = #{id}
+            </if>
+            <if test="name!=null">
+                and USER_NAME = #{name}
+            </if>
+            <if test="openid!=null">
+                and OPEN_ID = #{openid}
+            </if>
+        </where> 
+    </select>  
+    <insert id="insertUser" parameterType="com.wxs.user.User">
+		   insert into t_user(USER_ID, USER_NAME, USER_PWD)
+			    values(seq_on_user.nextval, #{name}, #{password})
+   </insert>
+    <update id="updateUser" parameterType="com.wxs.user.User">
+		   update t_user set OPEN_ID = #{openid}
+   </update>
+</mapper> 
