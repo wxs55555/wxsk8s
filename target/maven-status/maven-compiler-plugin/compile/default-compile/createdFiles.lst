@@ -1,0 +1,10 @@
+com\wxs\service\user\UserService.class
+com\wxs\vo\common\Result.class
+com\wxs\vo\CommonConstants.class
+com\wxs\WxsApp.class
+com\wxs\tools\ResultTool.class
+com\wxs\controller\test\TestController.class
+com\wxs\user\User.class
+com\wxs\controller\order\OrderController.class
+com\wxs\mapper\UserMapper.class
+com\wxs\controller\login\LoginController.class

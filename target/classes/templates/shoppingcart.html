@@ -1,0 +1,107 @@
+<!DOCTYPE html>  
+<html xmlns:th="http://www.thymeleaf.org">  
+<head>  
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
+<title>购物车</title>
+<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" name="viewport"></meta>
+    <meta content="yes" name="apple-mobile-web-app-capable"></meta>
+    <meta content="black" name="apple-mobile-web-app-status-bar-style"></meta>
+    <meta content="telephone=no" name="format-detection"></meta>
+    <link rel="stylesheet" href="css/ydui.css?rev=@@hash"/>
+    <link rel="stylesheet" href="css/demo.css"/>
+    <script src="js/ydui.flexible.js"></script>
+    <link type="text/css" rel="stylesheet" href='css/mainpage.css'/>
+	<link type="text/css" rel="stylesheet" href='css/public.css'/>
+	<script type="text/javascript" src='js/jquery-1.12.1.min.js'></script>
+	<script type="text/javascript" src='js/public.js'></script>
+<script type="text/javascript">
+	$(function() {
+		$(".footdiv ul li:nth-child(3)").addClass("licorlor");
+		$(".icon_select").click(function() {
+			$(".icon_select").toggleClass("icon_selected");
+		});
+
+	});
+</script>
+</head>
+<body><section class="g-scrollview">
+
+	<div class="carttitle">
+		<i class="icon_select icon_selected"></i>&nbsp;商品列表
+	</div>
+	<div class="goods">
+		<ul id="goodlists">
+		   	<li>
+				<i class="goodicon icon_select icon_selected"></i>
+				<a href="detail.html?id=8"><img src="images/mm1.jpg"></img></a> 
+				<span class='goodname'>日本面膜一ssssssssss</span>
+				<p class='goodprice'>￥<span>55.80</span>元</p>
+				<span class='minus'>-</span>
+				<input class="num" value="1"></input>
+				<span class='add'>+</span>
+				<div class="del"><img src="images/del.png"></img></div>
+		  	</li>
+		  	<li>
+				<i class="goodicon icon_select icon_selected"></i>
+				<a href="detail.html?id=8"><img src="images/mm1.jpg"></img></a> 
+				<span class='goodname'>日本面膜一ssssssssss</span>
+				<p class='goodprice'>￥<span>55.80</span>元</p>
+				<span class='minus'>-</span>
+				<input class="num" value="1"></input>
+				<span class='add'>+</span>
+				<div class="del"><img src="images/del.png"></img></div>
+		  	</li>
+		  	<li>
+				<i class="goodicon icon_select icon_selected"></i>
+				<a href="detail.html?id=8"><img src="images/mm1.jpg"></img></a> 
+				<span class='goodname'>日本面膜一ssssssssss</span>
+				<p class='goodprice'>￥<span>55.80</span>元</p>
+				<span class='minus'>-</span>
+				<input class="num" value="1"></input>
+				<span class='add'>+</span>
+				<div class="del"><img src="images/del.png"></img></div>
+		  	</li>
+		  	<li>
+				<i class="goodicon icon_select icon_selected"></i>
+				<a href="detail.html?id=8"><img src="images/mm1.jpg"></img></a> 
+				<span class='goodname'>日本面膜一ssssssssss</span>
+				<p class='goodprice'>￥<span>55.80</span>元</p>
+				<span class='minus'>-</span>
+				<input class="num" value="1"></input>
+				<span class='add'>+</span>
+				<div class="del"><img src="images/del.png"></img></div>
+		  	</li>
+		  	<li>
+				<i class="goodicon icon_select icon_selected"></i>
+				<a href="detail.html?id=8"><img src="images/mm1.jpg"></img></a> 
+				<span class='goodname'>日本面膜一ssssssssss</span>
+				<p class='goodprice'>￥<span>55.80</span>元</p>
+				<span class='minus'>-</span>
+				<input class="num" value="1"></input>
+				<span class='add'>+</span>
+				<div class="del"><img src="images/del.png"></img></div>
+		  	</li>
+		  	<li>
+				<i class="goodicon icon_select icon_selected"></i>
+				<a href="detail.html?id=8"><img src="images/mm1.jpg"></img></a> 
+				<span class='goodname'>日本面膜一ssssssssss</span>
+				<p class='goodprice'>￥<span>55.80</span>元</p>
+				<span class='minus'>-</span>
+				<input class="num" value="1"></input>
+				<span class='add'>+</span>
+				<div class="del"><img src="images/del.png"></img></div>
+		  	</li>
+		</ul>
+	</div>
+	<div class="fixBar">
+    <div class="checkAllBtn"><i class="icon_select icon_selected"></i>
+      <p>全选</p>
+    </div>
+    <div class="total" id="totalConfirmDiv">
+      <p>总计：￥<strong id="totalPrice">56.60</strong><small>(不含运费<span id="totalBackMoney"></span>)</small></p>
+      <a href="###" class="btn_pay" id="shopCartConfirm">确认下单</a> </div>
+  </div>
+ <footer class="m-tabbar tabbar-fixed">
+        </footer></section>
+</body>
+</html>

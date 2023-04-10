@@ -1,0 +1,15 @@
+<!DOCTYPE html>  
+<html xmlns:th="http://www.thymeleaf.org">  
+<head>  
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
+<title>授权</title>
+<script type="text/javascript" src='js/jquery-1.12.1.min.js'></script>
+
+</head> 
+<a id='shouquan' th:href="@{'https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx99d0a03e564959f7&amp;redirect_uri=http%3A%2F%2F161785yt21.51mypc.cn%2Fhome&amp;response_type=code&amp;scope=snsapi_userinfo&amp;state=1#wechat_redirect'}"><p></p></a> 
+<script> 
+$(document).ready(function(){
+	$('a#shouquan>p').trigger('click');
+});
+</script>
+</html> 
